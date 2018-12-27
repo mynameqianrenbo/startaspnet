@@ -1,0 +1,16 @@
+﻿@model Article
+<tr>
+    <th>
+        @Model.ID
+    </th>
+    <th>
+        @Model.Title
+    </th>
+    <th>
+        @Model.Summary
+    </th>
+    <th>
+        <a asp-controller="Article" asp-action="Edit" asp-route-id="@Model.ID">编辑</a>
+        <a asp-controller="Article" asp-action="Delete" asp-route-id="@Model.ID">删除</a>
+    </th>
+</tr>

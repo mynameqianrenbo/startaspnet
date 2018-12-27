@@ -1,0 +1,14 @@
+﻿@model Article
+@{
+    ViewData["Title"] = "Add";
+}
+
+<h2>Add</h2>
+<form method="post">
+    <label asp-for="Title"></label>
+    <input asp-for="Title"/>
+    <label asp-for="Summary"></label>
+    <input asp-for="Summary"/>
+    <button>提交</button>
+    <vc:article-count init="100"></vc:article-count>
+</form>
